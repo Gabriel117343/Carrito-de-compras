@@ -1,0 +1,44 @@
+.label-cart {
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+  background-color: yellow;
+  border-radius: 50%;
+  z-index: 9999;
+  position: fixed;
+
+  
+}
+.label-cart:hover {
+  cursor: pointer;
+  scale: 1.1;
+  
+}
+.icono-cart {
+  display: flex;
+  width: 100%;
+  height: inherit;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  position: absolute;
+  font-size: 30px;
+}
+
+.cart {
+  display: none;
+  padding-top: 7rem;
+  background-color: black;
+  color: white;
+  width: 20%;
+  position: fixed;
+  z-index: 99;
+}
+.btn-input:checked ~ .cart {
+  display: block;
+  
+  height: 100%;
+}
+.bi-cart-x {
+  font-size: 60px;
+}
